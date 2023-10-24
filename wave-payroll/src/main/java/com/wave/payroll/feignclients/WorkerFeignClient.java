@@ -10,7 +10,7 @@ import com.wave.payroll.entities.Worker;
 
 
 @Component
-@FeignClient(name = "wave-worker", url = "localhost:8001", path = "/workers")
+@FeignClient(name = "wave-worker", path = "/workers")
 public interface WorkerFeignClient {
 	
 	@GetMapping("/{id}")
