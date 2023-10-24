@@ -1,2 +1,2 @@
 # Wave
-Sistema Itegrado de gestão empresarial
+Sistema Integrado de gestão empresarial
