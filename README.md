@@ -32,3 +32,16 @@ Sistema Integrado de gestão empresarial
 INSERT INTO tb_worker (name, daily_Income) VALUES ('Bob', 200.0);
 INSERT INTO tb_worker (name, daily_Income) VALUES ('Maria', 300.0);
 INSERT INTO tb_worker (name, daily_Income) VALUES ('Alex', 250.0);
+
+**application.properties**
+```sql
+spring.application.name=wave-worker
+server.port=8001
+
+# Database configuration
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.username=sa
+spring.datasource.password=
+
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
