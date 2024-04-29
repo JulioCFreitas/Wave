@@ -24,10 +24,10 @@ public class PaymentResource {
 		Payment payment = paymentService.getPayment(workerId, days);
 		return ResponseEntity.ok(payment);
 	}
-
+	
 	public ResponseEntity<Payment> getPaymentAlternative(Long workerId, Integer days) {
 		Payment payment = new Payment("Teste Paymants Hystrix", 400.0, days);
-
 		return ResponseEntity.ok(payment);
 	}
+	
 }
